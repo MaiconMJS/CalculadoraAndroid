@@ -20,7 +20,7 @@ Após abrir o aplicativo, simplesmente comece a digitar sua equação na barra d
 
 - <img src="/Reativa.jpg" width="300" height="600">
 
-sso indica que a calculadora reconhece a precedência da multiplicação antes da subtração.
+isso indica que a calculadora reconhece a precedência da multiplicação antes da subtração.
 
 ## Instalação
 
