@@ -16,7 +16,7 @@ Após abrir o aplicativo, simplesmente comece a digitar sua equação na barra d
 
 ## Funcionalidades Avançadas
 
-- *Suporte a Porcentagens*: Nossa calculadora reativa facilita o cálculo de expressões envolvendo porcentagens. Seja para encontrar a porcentagem de um número, calcular um aumento ou desconto, ou resolver problemas matemáticos mais complexos, você pode contar com resultados precisos e exibição imediata. Como visto no exemplo abaixo:
+- *Suporte a Porcentagens*: Minha calculadora reativa facilita o cálculo de expressões envolvendo porcentagens. Seja para encontrar a porcentagem de um número, calcular um aumento ou desconto, ou resolver problemas matemáticos mais complexos, você pode contar com resultados precisos e exibição imediata. Como visto no exemplo abaixo:
 
 - <img src="/Reativa.jpg" width="300" height="600">
 
