@@ -12,13 +12,13 @@ Este é o meu primeiro projeto: uma calculadora reativa para Android Nativo que 
 
 Após abrir o aplicativo, simplesmente comece a digitar sua equação na barra de entrada. A calculadora irá processar a expressão à medida que você insere os números e operadores, e exibirá o resultado na tela. Por exemplo:
 
-<img src="/Ordem%20De%20Precedência.jpg" width="100" height="100">
+<img src="/Ordem%20De%20Precedência.jpg" width="150" height="300">
 
 ## Funcionalidades Avançadas
 
 - *Suporte a Porcentagens*: Nossa calculadora reativa facilita o cálculo de expressões envolvendo porcentagens. Seja para encontrar a porcentagem de um número, calcular um aumento ou desconto, ou resolver problemas matemáticos mais complexos, você pode contar com resultados precisos e exibição imediata. Como visto no exemplo abaixo:
 
-- <img src="/Reativa.jpg" width="100" height="100">
+- <img src="/Reativa.jpg" width="150" height="300">
 
 sso indica que a calculadora reconhece a precedência da multiplicação antes da subtração.
 
