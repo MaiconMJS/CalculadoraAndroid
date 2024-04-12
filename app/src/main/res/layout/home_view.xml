@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".view.Home">
+
+    <View
+        android:id="@+id/divisor_display"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_5dp"
+        android:layout_marginHorizontal="@dimen/margin_30dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/txt_display_value"
+        style="@style/Theme.Calculadora.TextView"
+        android:layout_marginTop="@dimen/margin_60dp"
+        android:textSize="@dimen/text_50sp"
+        app:layout_constraintBottom_toTopOf="@+id/divisor_display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_result_text_info"
+        style="@style/Theme.Calculadora.TextView"
+        android:layout_marginBottom="@dimen/margin_2dp"
+        android:text="@string/result"
+        android:textSize="@dimen/text_20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/divisor_display"
+        app:layout_constraintStart_toStartOf="@+id/divisor_display" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        style="@style/Theme.Calculadora.TextView"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:textSize="@dimen/text_22sp"
+        app:layout_constraintBottom_toTopOf="@+id/divisor_display"
+        app:layout_constraintStart_toEndOf="@+id/txt_result_text_info" />
+
+    <GridLayout
+        style="@style/Theme.Calculadora.GridLayout"
+        android:layout_marginHorizontal="@dimen/margin_20dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:backgroundTint="@color/red_dark"
+            android:text="@string/c" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/shape_back_button_selector"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/baseline_backspace_24" />
+
+        <Button
+            android:id="@+id/btn_percent"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/orange_dark"
+            android:text="@string/percent" />
+
+        <Button
+            android:id="@+id/btn_division"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:backgroundTint="@color/orange_dark"
+            android:text="@string/division" />
+
+        <Button
+            android:id="@+id/btn_seven"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginEnd="10dp"
+            android:text="@string/seven" />
+
+        <Button
+            android:id="@+id/btn_eight"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginEnd="10dp"
+            android:text="@string/eight" />
+
+        <Button
+            android:id="@+id/btn_nine"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginEnd="10dp"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/btn_multiple"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:backgroundTint="@color/orange_dark"
+            android:text="@string/multiple" />
+
+        <Button
+            android:id="@+id/btn_four"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginEnd="10dp"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/btn_five"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginEnd="10dp"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/btn_six"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginEnd="10dp"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/btn_subtraction"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:backgroundTint="@color/orange_dark"
+            android:text="@string/subtraction" />
+
+        <Button
+            android:id="@+id/btn_one"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginEnd="10dp"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/btn_two"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginEnd="10dp"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/btn_three"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_marginEnd="10dp"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/btn_addition"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:backgroundTint="@color/orange_dark"
+            android:text="@string/addition" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/red_dark"
+            android:text="@string/exit"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_zero"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginEnd="10dp"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/btn_comma"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_marginEnd="10dp"
+            android:text="@string/comma" />
+
+        <Button
+            android:id="@+id/btn_equal"
+            style="@style/Theme.Calculadora.Button"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:backgroundTint="@color/green_dark"
+            android:text="@string/equal" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
