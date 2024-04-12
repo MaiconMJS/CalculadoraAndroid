@@ -1,4 +1,4 @@
-# Calculadora Reativa
+# Calculadora Reativa Para Android
 
 Este é o meu primeiro projeto: uma calculadora reativa para Android Nativo que mostra os resultados em tempo real e ajusta a ordem de precedência das operações matemáticas automaticamente.
 
