@@ -37,8 +37,8 @@ Contribuições são sempre bem-vindas! Se você tiver alguma sugestão para mel
 
 ## Contato
 
-Se você tiver qualquer dúvida ou quiser entrar em contato comigo para discutir mais sobre o projeto, por favor, envie-me um e-mail para [newoverride@gmail.com].
+Se você tiver qualquer dúvida ou quiser entrar em contato comigo para discutir mais sobre o projeto, por favor, envie-me um e-mail para newoverride@gmail.com.
 
 ---
 
-Desenvolvido por [Maicon Jacobsen Silveira].
+Desenvolvido por Maicon Jacobsen Silveira.
