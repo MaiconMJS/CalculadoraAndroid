@@ -24,7 +24,7 @@
         android:id="@+id/txt_display_value"
         style="@style/Theme.Calculadora.TextView"
         android:layout_marginTop="@dimen/margin_60dp"
-        android:textSize="@dimen/text_50sp"
+        android:textSize="@dimen/text_60sp"
         app:layout_constraintBottom_toTopOf="@+id/divisor_display"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -87,9 +87,9 @@ class DisplayPresenter(
     // REMOVE O ÚLTIMO DÍGITO!
     override fun removeLast() {
         if (currentValue.isNotEmpty()) {
-            countDigits()
             currentValue = currentValue.dropLast(1)
             digitsOnly.length - 1
+            countDigits()
             view.showResult(currentValue)
         } else {
             view.showResult(currentValue)
@@ -148,7 +148,7 @@ class DisplayPresenter(
                 view.animateTextSize(currentValue.length, targetTextSize)
             }
         } else if (targetTextSize < 50f) {
-            targetTextSize = min(50f, targetTextSize + 30f)
+            targetTextSize = min(60f, targetTextSize + 30f)
             view.animateTextSize(currentValue.length, targetTextSize)
         }
     }
@@ -269,7 +269,7 @@ class DisplayPresenter(
         animator.start()
     }
 
-    // PASSA RESPONSABILIDADE PARA O PRESENTER INICIAR A ANIMAÇÃO!
+    // INICIA A ANMAÇÃO E VIBRAÇÃO DO DISPOSITIVO AO CLICAR EM QUALQUER BOTÃO!
     @RequiresApi(Build.VERSION_CODES.S)
     @SuppressLint("ServiceCast")
     override fun startSpringAnimationView(view: View) {

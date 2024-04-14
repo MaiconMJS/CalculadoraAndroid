@@ -51,6 +51,7 @@ class Home : AppCompatActivity(), Display.View {
         binding!!.txtResult.text = value
     }
 
+    // PASSA RESPONSABILIDADE PARA O PRESENTER INICIAR A ANIMAÇÃO!
     // FAZ UMA ANIMAÇÃO DE MOLA EM BOTÕES DO TECLADO!
     override fun springAnimationView(view: View) {
         presenter!!.startSpringAnimationView(view)

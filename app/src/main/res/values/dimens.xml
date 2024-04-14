@@ -6,6 +6,7 @@
     <dimen name="margin_30dp">30dp</dimen>
     <dimen name="margin_60dp">60dp</dimen>
     <dimen name="text_50sp">50sp</dimen>
+    <dimen name="text_60sp">60sp</dimen>
     <dimen name="margin_2dp">2dp</dimen>
     <dimen name="text_20sp">20sp</dimen>
     <dimen name="margin_5dp">5dp</dimen>
