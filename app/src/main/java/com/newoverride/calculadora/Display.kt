@@ -21,6 +21,7 @@ interface Display {
             captureID: TextView,
             targetSize: Float
         )
+
         fun startSpringAnimationView(view: android.view.View)
     }
 
