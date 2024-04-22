@@ -8,7 +8,7 @@ import com.newoverride.calculadora.R
 import com.newoverride.calculadora.databinding.HomeViewBinding
 import com.newoverride.calculadora.presenter.DisplayPresenter
 
-class Home : AppCompatActivity(), Display.View {
+class HomeView : AppCompatActivity(), Display.View {
 
     private var binding: HomeViewBinding? = null
     private var presenter: Display.Presenter? = null

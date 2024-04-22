@@ -7,7 +7,6 @@ import android.os.Build
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.os.VibratorManager
-import android.util.Log
 import android.view.View
 import android.widget.TextView
 import androidx.annotation.RequiresApi
@@ -15,7 +14,7 @@ import androidx.dynamicanimation.animation.DynamicAnimation
 import androidx.dynamicanimation.animation.SpringAnimation
 import androidx.dynamicanimation.animation.SpringForce
 import com.newoverride.calculadora.Display
-import com.newoverride.calculadora.view.Home
+import com.newoverride.calculadora.view.HomeView
 import java.text.NumberFormat
 import java.util.Locale
 import kotlin.math.max
@@ -158,7 +157,6 @@ class DisplayPresenter(
         if (currentValue.isNotEmpty()) {
             val onlyDigit = currentValue.filter { it.isDigit() }
             if (currentValue.last().isDigit() && onlyDigit.length < 15) {
-                Log.i("Teste", "dwqdqwd")
                 currentValue += value
                 countDigits()
                 calculateResult()
@@ -240,13 +238,13 @@ class DisplayPresenter(
             }
         }
         val formattedResult = NumberFormat.getNumberInstance(Locale("pt", "BR")).format(total)
-        if (Home.activeResult) {
+        if (HomeView.activeResult) {
             currentValue = formattedResult
             view.showValue(currentValue)
         }
         view.showResult(formattedResult)
         view.showValue(formattedResult)
-        Home.activeResult = false
+        HomeView.activeResult = false
     }
 
     // INICIA A ANIMAÇÃO NA VIEW!
